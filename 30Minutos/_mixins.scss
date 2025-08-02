@@ -1,0 +1,7 @@
+@mixin botao($fonte) {
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: $fonte;
+    background-color: #eee;
+    font-weight: bold;
+}

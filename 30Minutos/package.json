@@ -1,0 +1,15 @@
+{
+  "name": "30minutos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compilar": "sass style.scss style.css",
+    "observar": "sass --watch style.scss style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.83.0"
+  }
+}

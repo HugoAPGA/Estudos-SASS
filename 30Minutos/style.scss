@@ -1,0 +1,42 @@
+@import "variaveis";
+@import "mixins";
+@import "extends";
+
+body {
+    font-size: $tamnho-fonte;
+    color: var(--variavel);
+    color: $cor;
+    background-color: $fundo;
+
+    div {
+        font-size: $tamnho-fonte * 1.5;
+
+        p {
+            color: lightblue;
+
+            &.paragrafo {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.botao-princ {
+    @include botao($tamnho-fonte * 1.5);
+
+    &:hover {
+        background-color: #ccc;
+    }
+}
+
+.botao-sec {
+    @include botao($tamnho-fonte * 1.25);
+
+    &:hover {
+        background-color: lightblue;
+    }
+}
+
+.botao-terc {
+    @extend %botao;
+}
